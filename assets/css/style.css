@@ -1,10 +1,47 @@
 /* Estilos da página index.html.*/
-style
+
 
 .center {
     text-align: center;
 }
 
+#menu li{
+    display: inline;
+    padding: 20px;
+
+}
 
 
+#menu li a {
+
+text-decoration: none;
+color: black;
+font-size: 30px;
+
+}
+#menu li a:hover{
+    color: gray;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+
+.p-30{
+    padding: 30px;
+}
+
+.aju{
+    border-radius: 50%;
+}
+
+.wh{
+    width: 400px;
+    height: 400px;
+}
 /* Estilos da página contato.html.*/
