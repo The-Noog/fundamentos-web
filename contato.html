@@ -20,44 +20,61 @@
 
     <h1>Minhas informações</h1>
 
-
+<div>
     <form>
-        <label for="E-mail">Entre com o seu e-mail</label><br>
-        <input type="text"id="E-mail">
-        <br>
+        <label for="nome">Nome:</label><br>
+        <input type="text"id="nome" onkeyup="validaNome()">
+        <div id="txtNome"></div>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id='txtEmail'></div>      
+        <br>  
         <br>
         <label for="assunto">Assunto</label><br>
-        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+        <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup="validaAssunto()" ></textarea>
+        <div id="txtAssunto"></div>
         <br>
-        <br>
-        <button>Enviar</button>
+        <button onclick="enviar()">Enviar</button>
     </form>
+</div>
     
 <h2>Minha localização</h2>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6933103918886!2d-46.659793885955764!3d-23.579455884673944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59e93a8be299%3A0x73ad06204c71cbc9!2sAv.%20Srg.%20Mario%20Kozel%20Filho%20-%20Para%C3%ADso%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1603319310190!5m2!1spt-BR!2sbr" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <h2>Meus contatos pessoais</h2>
-    <a 
-    href="https://api.whatsapp.com/send?phone=5511952098770" target="_blank"> 
-        <img class="whatsapp" src="assets/img/whatsapp.png" width="100" 100px">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6933103918886!2d-46.659793885955764!3d-23.579455884673944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59e93a8be299%3A0x73ad06204c71cbc9!2sAv.%20Srg.%20Mario%20Kozel%20Filho%20-%20Para%C3%ADso%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1603319310190!5m2!1spt-BR!2sbr" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+    <h2 class="container-contato">Meus contatos pessoais</h2>
+    <hr>
+
+    <div class="container-contato">
+    <a href="https://api.whatsapp.com/send?phone=5511952098770" target="_blank"> 
+        <img src="assets/img/whatsapp.png" class="tm-social">
  
      </a>
+     
      <a href="https://www.facebook.com/weslley.noogueira.figueiredo" target="_blank">
-        <img src="assets/img/facebook.png" width="100px">
+        <img src="assets/img/facebook.png" class="tm-social">
     </a>
 
 </a>
 <a href="https://github.com/The-Noog" target="_blank">
-   <img src="assets/img/github.png" width="90px">
+   <img src="assets/img/github.png" class="tm-social">
 </a>
 
 </a>
 <a href="https://www.linkedin.com/in/weslley-nogueira-figueiredo/" target="_blank">
-   <img src="assets/img/linkedin.png" width="100px">
+   <img src="assets/img/linkedin.png" class="tm-social">
 </a>
 
 </a>
 <a href="https://twitter.com/weslleynoog" target="_blank">
-   <img src="assets/img/twitter.png" width="100px">
+   <img src="assets/img/twitter.png"class="tm-social">
 </a>
+
+</div>
+
+
+
+<script src="assets/js/script.js"></script>
+
+
 </body>
 </html>
